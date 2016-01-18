@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Whats_The_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new-york-view-2560x1440_blur.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Se1-hV-Fy4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What`s The Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad4-BU-4WO">
+                                <rect key="frame" x="117" y="56" width="367" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="367" id="YPR-On-aeE"/>
+                                    <constraint firstAttribute="height" constant="33" id="lKs-87-PMO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRn-SL-15N">
+                                <rect key="frame" x="254" y="109" width="93" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="Cp1-x8-eWs"/>
+                                    <constraint firstAttribute="height" constant="21.5" id="hyp-rZ-tIw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cb-1p-TMZ">
+                                <rect key="frame" x="274" y="202" width="52" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="RdQ-IR-Zsd"/>
+                                    <constraint firstAttribute="width" constant="52" id="yFm-9N-g7K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Check">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1P8-oM-zHN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Kiev, New York" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opv-N9-nOQ">
+                                <rect key="frame" x="181" y="142" width="238" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Kdh-TR-5LN"/>
+                                    <constraint firstAttribute="width" constant="238" id="sIo-Tj-gUU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="cityTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bwh-E9-1Lv"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obp-eT-jrX">
+                                <rect key="frame" x="28" y="243" width="544" height="349"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Se1-hV-Fy4" secondAttribute="bottom" id="2wd-bu-Otr"/>
+                            <constraint firstItem="Obp-eT-jrX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5xC-AO-JZx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Obp-eT-jrX" secondAttribute="trailing" constant="30" id="6YP-5H-2SY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Se1-hV-Fy4" secondAttribute="trailing" constant="-20" id="6ir-C0-LVR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Obp-eT-jrX" secondAttribute="bottom" constant="8" id="79g-vu-9Us"/>
+                            <constraint firstItem="FRn-SL-15N" firstAttribute="top" secondItem="ad4-BU-4WO" secondAttribute="bottom" constant="20" id="7No-63-qCp"/>
+                            <constraint firstItem="Se1-hV-Fy4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EUy-Ie-gc1"/>
+                            <constraint firstItem="ad4-BU-4WO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GYd-IZ-Prz"/>
+                            <constraint firstItem="6cb-1p-TMZ" firstAttribute="top" secondItem="opv-N9-nOQ" secondAttribute="bottom" constant="30" id="NkJ-qt-Qiw"/>
+                            <constraint firstItem="6cb-1p-TMZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qkg-tw-Gdc"/>
+                            <constraint firstItem="ad4-BU-4WO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Ved-XM-l9p"/>
+                            <constraint firstItem="opv-N9-nOQ" firstAttribute="top" secondItem="FRn-SL-15N" secondAttribute="bottom" constant="11.5" id="bFl-zL-tCO"/>
+                            <constraint firstItem="Se1-hV-Fy4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fF8-CF-UYm"/>
+                            <constraint firstItem="Obp-eT-jrX" firstAttribute="top" secondItem="6cb-1p-TMZ" secondAttribute="bottom" constant="8" id="kWe-yC-aRs"/>
+                            <constraint firstItem="opv-N9-nOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pmX-rl-w6s"/>
+                            <constraint firstItem="FRn-SL-15N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qot-ye-rc1"/>
+                            <constraint firstItem="Obp-eT-jrX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="s0b-zh-iH6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6YP-5H-2SY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="opv-N9-nOQ" id="6J9-pK-xer"/>
+                        <outlet property="resultLabel" destination="Obp-eT-jrX" id="TKR-Ue-T6l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="new-york-view-2560x1440_blur.jpg" width="2560" height="1440"/>
+    </resources>
+</document>
